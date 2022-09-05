@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context = ".OnBoardingActivity">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.hadi.testtodoapp.TaskViewModel" />
+
+        <variable
+            name="signinFragmentview"
+            type="com.hadi.testtodoapp.SigninFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="315dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/button_bg"
+            android:text="Log in"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.531"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
+
+        <EditText
+            android:id="@+id/email1"
+            android:layout_width="312dp"
+            android:layout_height="39dp"
+            android:background="@drawable/signintexts_bg"
+            android:hint="Email"
+            android:textColor="#000000"
+            android:textColorHint="#C6C6C6"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="58dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.223" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="312dp"
+            android:layout_height="39dp"
+            android:background="@drawable/signintexts_bg"
+            android:hint="Password"
+            android:textColorHint="#C6C6C6"
+            android:textColor="#000000"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/email1"
+            app:layout_constraintVertical_bias="0.07" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Forgot Password?"
+            android:textColor="#A489D1"
+            app:layout_constraintEnd_toEndOf="@+id/password"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
