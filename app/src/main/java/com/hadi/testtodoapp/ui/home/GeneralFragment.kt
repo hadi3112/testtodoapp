@@ -10,12 +10,11 @@ import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.hadi.testtodoapp.TaskListAdapter
 import com.hadi.testtodoapp.TaskViewModel
-import com.hadi.testtodoapp.databinding.FragmentHomeBinding
-import java.util.*
+import com.hadi.testtodoapp.databinding.FragmentGeneralBinding
 
-class HomeFragment : Fragment() , HomeFabDialogue.TaskNameListener{
+class GeneralFragment : Fragment() , HomeFabDialogue.TaskNameListener{
 
-    private var binding: FragmentHomeBinding? = null
+    private var binding: FragmentGeneralBinding? = null
     private val sharedViewModel:TaskViewModel by activityViewModels()
 
     private var mydataset = listOf<String>()
@@ -30,10 +29,16 @@ class HomeFragment : Fragment() , HomeFabDialogue.TaskNameListener{
         savedInstanceState: Bundle?
     ): View
     {
-        val fragmentbinding = FragmentHomeBinding.inflate(inflater, container, false)
+        val fragmentbinding = FragmentGeneralBinding.inflate(inflater, container, false)
         binding = fragmentbinding
 
-        HomeFabDialogue().setlistener(this)
+        HomeFabDialogue().setlistener(this)      //not used
+
+        binding?.fab?.setOnClickListener {
+            //FAB functionality
+
+            HomeFabDialogue().show(childFragmentManager, "the fab dialogue")
+        }
 
         Log.v("TAG","Fragment created")
 
@@ -43,7 +48,7 @@ class HomeFragment : Fragment() , HomeFabDialogue.TaskNameListener{
     private  fun initObserver(){
         sharedViewModel.hometaskarrayLive.observe(viewLifecycleOwner ){
             it.let{
-                if (!it.isNullOrEmpty()){
+                if (!it.isNullOrEmpty()){               //it = a parameter to access viewmodel object
                     mydataset= it
                     initAdapter(it)
                 }
@@ -70,7 +75,7 @@ class HomeFragment : Fragment() , HomeFabDialogue.TaskNameListener{
         binding?.apply {
 
             viewModel = sharedViewModel
-            homefragment = this@HomeFragment
+            generalfragment = this@GeneralFragment
         }
     }
 
@@ -83,7 +88,7 @@ class HomeFragment : Fragment() , HomeFabDialogue.TaskNameListener{
     }
 
     override fun onFinishHomeDialog(string: String) {
-        mydataset.plus(string)
+        mydataset.plus("ma cacc")
         Log.e("Taggg", string)
     }
 

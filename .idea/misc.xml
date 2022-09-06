@@ -6,9 +6,19 @@
         <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/drawable-v24/bg_gradient.xml" value="0.1715" />
         <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/drawable-v24/button_bg.xml" value="0.1715" />
         <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/drawable-v24/curvedviewbg.xml" value="0.1715" />
+        <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1715" />
         <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/drawable-v24/ic_search.xml" value="0.1715" />
+        <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/drawable-v24/splash_background.xml" value="0.1715" />
+        <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/drawable/bg_cancel.xml" value="0.1715" />
+        <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/drawable/bg_done.xml" value="0.1715" />
         <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/drawable/ic_add.xml" value="0.1715" />
+        <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/drawable/ic_date_range.xml" value="0.124" />
+        <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/drawable/ic_menu_camera.xml" value="0.1715" />
+        <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.1715" />
+        <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.1715" />
+        <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/drawable/ic_reminder.xml" value="0.124" />
         <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/drawable/searchbar_bg.xml" value="0.1715" />
+        <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/drawable/side_nav_bar.xml" value="0.1715" />
         <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/drawable/taskdetails.xml" value="0.1715" />
         <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/font/fonts.xml" value="0.2833333333333333" />
         <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/layout/activity_home.xml" value="0.22826086956521738" />
@@ -18,7 +28,9 @@
         <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/layout/app_bar_home.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/layout/content_home.xml" value="0.1671875" />
         <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/layout/default_item_card.xml" value="0.1" />
+        <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/layout/fragment_academics.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/layout/fragment_gallery.xml" value="0.1671875" />
+        <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/layout/fragment_general.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/layout/fragment_sign_up.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/layout/fragment_signin.xml" value="0.1" />
@@ -29,6 +41,8 @@
         <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/layout/task_dialog.xml" value="0.25" />
         <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/menu/activity_main_drawer.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/menu/home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1715" />
+        <entry key="..\:/Users/mhadi.rizwan/AndroidStudioProjects/testtodoapp/app/src/main/res/mipmap-anydpi-v26/mysplashicon_launcher_round.xml" value="0.1715" />
       </map>
     </option>
   </component>

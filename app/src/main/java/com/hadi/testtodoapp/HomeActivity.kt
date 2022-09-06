@@ -30,11 +30,7 @@ class HomeActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.appBarHome.toolbar)
 
-        binding.appBarHome.fab.setOnClickListener {
-            //FAB functionality
 
-               HomeFabDialogue().show(supportFragmentManager, "the fab dialogue")
-        }
 
 
         val drawerLayout: DrawerLayout = binding.drawerLayout
@@ -44,7 +40,7 @@ class HomeActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_completed
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

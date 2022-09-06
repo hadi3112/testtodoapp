@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.hadi.testtodoapp.ui.home.HomeFragment"
+        android:name="com.hadi.testtodoapp.ui.home.GeneralFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_general" />
 
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.hadi.testtodoapp.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_academics" />
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.hadi.testtodoapp.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_work" />
 </navigation>

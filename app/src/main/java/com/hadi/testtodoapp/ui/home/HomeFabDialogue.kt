@@ -53,9 +53,10 @@ class HomeFabDialogue:DialogFragment() {
 
         binding.donebtn.setOnClickListener {
             val text = binding.thetask.text.toString()
-            sharedViewModel.setTaskArray(text)    //get Task title to be passed
-            //to recyclerview
+            sharedViewModel.setTaskArray(text)    //get Task title to be passed to recyclerview
+
             Log.e("taggg-listener" , listener.toString())
+
             dialog!!.dismiss()
 
         }
@@ -75,45 +76,5 @@ class HomeFabDialogue:DialogFragment() {
     }
 
 
-/*
-    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        return activity?.let {
-
-            binding = TaskDialogBinding.inflate(LayoutInflater.from(context))
-            val builder = AlertDialog.Builder(it)
-
-
-
-
-            // Get the layout inflater
-            val inflater = requireActivity().layoutInflater;
-            dialog!!.setContentView(R.layout.task_dialog)
-
-
-
-            // Inflate and set the layout for the dialog
-            // Pass null as the parent view because its going in the dialog layout
-            builder.setView(inflater.inflate(R.layout.task_dialog, null))
-
-                // Add action buttons
-                .setPositiveButton(R.string.done,
-                    DialogInterface.OnClickListener { dialog, id ->
-                        val text = binding.thetask.text.toString()
-                        sharedViewModel.setTaskArray(text)    //get Task title to be passed
-                        //to recyclerview
-                        Log.e("taggg-listener" , listener.toString())
-
-
-                    })
-                .setNegativeButton(R.string.cancel,
-                    DialogInterface.OnClickListener { dialog, id ->
-                        getDialog()?.cancel()
-                    })
-
-
-            builder.create()
-
-        } ?: throw IllegalStateException("Activity cannot be null")
-    }*/
 
 }
