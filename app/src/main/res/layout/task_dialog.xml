@@ -221,12 +221,14 @@
                 app:layout_constraintEnd_toStartOf="@+id/donebtn"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_marginTop="20dp"
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/cancelbtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cancelbtn" />
 
 

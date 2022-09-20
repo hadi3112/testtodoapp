@@ -7,10 +7,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
+import com.hadi.testtodoapp.ui.home.HomeFabDialogue
 
 
 
@@ -22,10 +24,17 @@ class OnBoardingActivity: AppCompatActivity() {
     val tabtitles = arrayOf("Log in", "Sign Up")
     var tablayout: TabLayout? = null
 
+    var listener: ViewpagerListener? = null
+
+    public interface ViewpagerListener{
+        fun UpdateViewPager(): Int?
+    }
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-
 
         viewPager = findViewById(R.id.viewPager);      //FIX: should use mvvm architecture instead
         tablayout = findViewById(R.id.tabLayout)
@@ -45,8 +54,13 @@ class OnBoardingActivity: AppCompatActivity() {
             }
         }.attach()
 
+        //
 
+    }
 
+    public fun setlistener(listener: ViewpagerListener)  //get bck here
+    {
+        this.listener = listener
     }
 
 }
